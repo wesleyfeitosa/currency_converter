@@ -24,8 +24,7 @@ export default function Conversor(props) {
             <input type="text" onChange={(event) => {
                 converter(event.target.value)
             }}></input>
-            <input type="button" value="Converter" onClick={converter}></input>
-            <h2>{moedaB}</h2>
+            <h2>{props.moedaB} {moedaB}</h2>
         </div>
     )
 }
